@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EntregablesService {
-  private baseUrl = 'http://localhost:4000/api/entregables'; // URL de tu API backend
+  private baseUrl = 'http://34.229.90.61:4000/api/entregables'; // URL de tu API backend
 
   constructor(private http: HttpClient) {}
 
