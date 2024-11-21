@@ -134,6 +134,8 @@ export class ProyectoEntregablesComponent implements OnInit{
   onSelectEntregable(entregable: any): void {
     this.selectedEntregable = entregable; // Actualiza el entregable seleccionado
     this.nombredelEntregable = entregable.nombre;
+    console.log('Entregable seleccionado:', entregable); 
+    console.log('Nombre del entregable seleccionado:', this.nombredelEntregable);
   }
 
   openCreateUserModal(): void {
