@@ -22,7 +22,7 @@
     <div class="right-container">
         <!-- Card de detalles -->
         <div class="card card-3" *ngIf="selectedEntregable">
-            <h3>{{ selectedEntregable.nombre }}</h3>
+            <h3>{{ selectedEntregable?.nombre }}</h3>
             <hr class="separatorA">
             <div class="tasks">
                 <div class="task-item" *ngFor="let tarea of selectedEntregable.tareas">
