@@ -15,6 +15,7 @@ export class ProyectoEntregablesComponent implements OnInit{
   selectedFile: File | null = null;
   selectedFileName: string | null = null;
   archivo: string = ''; 
+  nombredelEntregable: string | null = null; 
 
   proyectos = [
     {
@@ -132,6 +133,7 @@ export class ProyectoEntregablesComponent implements OnInit{
 
   onSelectEntregable(entregable: any): void {
     this.selectedEntregable = entregable; // Actualiza el entregable seleccionado
+    this.nombredelEntregable = entregable.nombre;
   }
 
   openCreateUserModal(): void {
